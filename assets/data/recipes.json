@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Chicken Alfredo",
+    "description": "A rich and creamy pasta dish with chicken.",
+    "ingredients": ["Pasta", "Chicken", "Heavy Cream", "Parmesan Cheese", "Garlic"],
+    "image_url": "Chicken-Alfredo-above.jpg"
+  },
+  {
+    "name": "Beef Tacos",
+    "description": "Tasty tacos filled with seasoned beef.",
+    "ingredients": ["Ground Beef", "Taco Shells", "Lettuce", "Cheese", "Tomato", "Sour Cream"],
+    "image_url": "https://example.com/images/beef_tacos.jpg"
+  },
+  {
+    "name": "Margherita Pizza",
+    "description": "A classic Italian pizza with fresh toppings.",
+    "ingredients": ["Pizza Dough", "Tomato Sauce", "Mozzarella", "Basil", "Olive Oil"],
+    "image_url": "https://example.com/images/margherita_pizza.jpg"
+  },
+  {
+    "name": "Grilled Salmon",
+    "description": "A healthy and flavorful salmon dish.",
+    "ingredients": ["Salmon Fillet", "Lemon", "Garlic", "Olive Oil", "Dill"],
+    "image_url": "https://example.com/images/grilled_salmon.jpg"
+  },
+  {
+    "name": "Caesar Salad",
+    "description": "A crunchy and savory salad.",
+    "ingredients": ["Romaine Lettuce", "Croutons", "Parmesan Cheese", "Caesar Dressing"],
+    "image_url": "https://example.com/images/caesar_salad.jpg"
+  },
+  {
+    "name": "Vegetarian Chili",
+    "description": "A hearty and spicy vegetarian stew.",
+    "ingredients": ["Beans", "Tomatoes", "Onions", "Bell Peppers", "Chili Powder", "Garlic"],
+    "image_url": "https://example.com/images/vegetarian_chili.jpg"
+  },
+  {
+    "name": "Spaghetti Bolognese",
+    "description": "A classic Italian meat sauce pasta.",
+    "ingredients": ["Spaghetti", "Ground Beef", "Tomato Sauce", "Onions", "Garlic", "Carrot"],
+    "image_url": "https://example.com/images/spaghetti_bolognese.jpg"
+  },
+  {
+    "name": "Chicken Curry",
+    "description": "A spicy and aromatic curry dish.",
+    "ingredients": ["Chicken", "Coconut Milk", "Curry Powder", "Onions", "Garlic", "Ginger"],
+    "image_url": "https://example.com/images/chicken_curry.jpg"
+  },
+  {
+    "name": "Greek Salad",
+    "description": "A refreshing salad with Mediterranean flavors.",
+    "ingredients": ["Cucumber", "Tomato", "Feta Cheese", "Olives", "Red Onion", "Olive Oil"],
+    "image_url": "https://example.com/images/greek_salad.jpg"
+  },
+  {
+    "name": "Shrimp Scampi",
+    "description": "A garlicky and buttery shrimp pasta dish.",
+    "ingredients": ["Shrimp", "Pasta", "Garlic", "Butter", "Lemon", "Parsley"],
+    "image_url": "https://example.com/images/shrimp_scampi.jpg"
+  },
+  {
+    "name": "Beef Stroganoff",
+    "description": "A creamy and savory beef dish.",
+    "ingredients": ["Beef", "Mushrooms", "Sour Cream", "Onions", "Beef Broth"],
+    "image_url": "https://example.com/images/beef_stroganoff.jpg"
+  },
+  {
+    "name": "Lentil Soup",
+    "description": "A comforting and nutritious soup.",
+    "ingredients": ["Lentils", "Carrots", "Onions", "Celery", "Tomato", "Garlic"],
+    "image_url": "https://example.com/images/lentil_soup.jpg"
+  },
+  {
+    "name": "Pancakes",
+    "description": "Fluffy and delicious breakfast cakes.",
+    "ingredients": ["Flour", "Eggs", "Milk", "Baking Powder", "Sugar", "Butter"],
+    "image_url": "https://example.com/images/pancakes.jpg"
+  },
+  {
+    "name": "Stuffed Bell Peppers",
+    "description": "Bell peppers filled with a savory mix.",
+    "ingredients": ["Bell Peppers", "Ground Meat", "Rice", "Tomato Sauce", "Cheese"],
+    "image_url": "https://example.com/images/stuffed_bell_peppers.jpg"
+  },
+  {
+    "name": "Vegetable Soup",
+    "description": "A light and comforting soup.",
+    "ingredients": ["Mixed Vegetables", "Vegetable Broth", "Garlic", "Onion", "Parsley"],
+    "image_url": "https://example.com/images/vegetable_soup.jpg"
+  }
+]
