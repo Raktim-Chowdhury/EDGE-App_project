@@ -240,12 +240,12 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
                           // ingredients name
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: widget.documentSnapshot['ingredientsName']
+                            children: widget.documentSnapshot['ingredients']
                                 .map<Widget>((ingredient) => SizedBox(
                               height: 60,
                               child: Center(
                                 child: Text(
-                                  ingredient,
+                                  ingredient['name'],
                                   style: TextStyle(
                                     fontSize: 16,
                                     color: Colors.grey.shade400,
@@ -289,6 +289,7 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
 
   FloatingActionButton startCookingAndFavoriteButton(
       FavoriteProvider provider) {
+
     return FloatingActionButton.extended(
       backgroundColor: Colors.transparent,
       elevation: 0,
@@ -301,7 +302,16 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
                 padding:
                 const EdgeInsets.symmetric(horizontal: 100, vertical: 13),
                 foregroundColor: Colors.white),
-            onPressed: () {},
+            onPressed: () {
+              List<dynamic> steps = widget.documentSnapshot['steps'];
+
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CookNow(steps: steps),
+                ),
+              );
+            },
             child: const Text(
               "Start Cooking",
               style: TextStyle(
@@ -334,6 +344,64 @@ class _RecipeDetailScreenState extends State<RecipeDetailScreen> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class CookNow extends StatelessWidget {
+  final List<dynamic> steps;
+
+  const CookNow({super.key, required this.steps});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Cook Now'),
+        backgroundColor: kprimaryColor, // You can use your app's primary color here
+        elevation: 0,
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: ListView.builder(
+          itemCount: steps.length,
+          itemBuilder: (context, index) {
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 16.0),  // Adds space between steps
+              child: Card(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),  // Rounded corners for cards
+                ),
+                elevation: 5,  // Gives a shadow effect
+                child: ListTile(
+                  leading: Icon(
+                    Icons.restaurant,  // Cooking-related icon
+                    color: kprimaryColor,  // Primary color for icon
+                  ),
+                  title: Text(
+                    'Step ${index + 1}',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                      color: kprimaryColor,
+                    ),
+                  ),
+                  subtitle: Padding(
+                    padding: const EdgeInsets.only(top: 8.0),
+                    child: Text(
+                      steps[index],
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.black87,  // Slightly darker color for readability
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        ),
       ),
     );
   }
